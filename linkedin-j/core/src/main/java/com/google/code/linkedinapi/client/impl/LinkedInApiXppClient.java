@@ -157,7 +157,7 @@ public class LinkedInApiXppClient extends BaseLinkedInApiClient {
         	if (parser.getEventType() == XmlPullParser.START_DOCUMENT) {
         		parser.nextTag();
         	}
-
+  
         	BaseSchemaEntity entity = getSchemaEntityByClass(clazz);
         	
         	entity.init(parser);
